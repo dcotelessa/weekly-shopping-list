@@ -34,3 +34,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# yaml setup for db
+postgres-deployment.yaml
+ferretdb-deployment.yaml
