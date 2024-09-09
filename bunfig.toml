@@ -1,0 +1,11 @@
+[install]
+production = false
+
+[install.scopes]
+next = "https://registry.npmjs.org/"
+
+[test]
+coverage = true
+
+[run]
+env = { NODE_ENV = "development" }
