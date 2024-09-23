@@ -22,10 +22,13 @@ export default async function searchHandler(
 
   try {
     console.log(process.env.API_BASE_URL);
-    const apiUrl = new URL("/bf/flipp/items/search", process.env.API_BASE_URL);
+    const apiUrl = new URL(
+      "/api/flipp/flyer_items/search",
+      process.env.API_BASE_URL,
+    );
     apiUrl.searchParams.append("postal_code", postal_code);
     apiUrl.searchParams.append("q", q);
-    apiUrl.searchParams.append("locale", "en_us");
+    apiUrl.searchParams.append("locale", "en");
 
     console.log(apiUrl.toString());
     const response = await fetch(apiUrl.toString());
